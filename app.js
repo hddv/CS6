@@ -61,6 +61,10 @@ app.get("/", function (req, res) {
 
   let question = "";
 
+  if(index == 35){
+    index = 0;
+  }
+
 
     question = questions[index];
 
