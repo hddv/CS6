@@ -61,7 +61,7 @@ app.get("/", function (req, res) {
 
   let question = "";
 
-  if(index == 35){
+  if(index == 36){
     index = 0;
   }
 
