@@ -75,4 +75,5 @@ p{
 input, textarea {
   -webkit-appearance: none;
   border-radius: 0;
+  text-align: center;
 }
