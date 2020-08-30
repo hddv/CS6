@@ -15,9 +15,11 @@
 
     <div class="space">
       
-     <h1><%= i %>.</h1>
+     <h1><%= i %></h1>
 
      <p><%= question %></p>
+
+      <input type="button" name="chrono" value="Ready" id="chrono">
 
 
      <div class="buttons">
@@ -32,5 +34,13 @@
 
   </div>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script>
+    if($("h1").text() === "Bonus"){
+      $("#chrono").css("display", "block");
+    }
+    console.log($("h1").text());
+  </script>
 </body>
 </html>

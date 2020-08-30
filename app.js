@@ -48,7 +48,8 @@ const questions = [
   "Si vous deviez mourir ce soir sans l’opportunité de communiquer avec qui que ce soit, que regretteriez-vous le plus de ne pas avoir dit ? Pourquoi ne pas leur avoir dit encore ?",
   "Votre maison, contenant tout ce qui vous appartient, prend feu. Après avoir sauvé votre famille et vos animaux de compagnie, vous avez le temps de récupérer en toute sécurité une chose uniquement. Laquelle serait-elle ? Pourquoi ?",
   "De tous les membres de votre famille, la mort de qui vous toucherait-elle le plus ? Pourquoi ? ",
-  "Partagez un problème personnel et demandez à votre partenaire comment il le gérerait. Demandez également à votre partenaire de vous dire comment il pense que vous vous sentez par rapport à ce problème."
+  "Partagez un problème personnel et demandez à votre partenaire comment il le gérerait. Demandez également à votre partenaire de vous dire comment il pense que vous vous sentez par rapport à ce problème.",
+  "Regardez votre partenaire dans les yeux en silence pendant 4 minutes."
 
 ];
 
@@ -61,17 +62,26 @@ app.get("/", function (req, res) {
 
   let question = "";
 
-  if(index == 36){
+  if(index == 37){
     index = 0;
   }
 
 
     question = questions[index];
 
-    res.render("index", {
-      i: index+1,
-      question: question
-    });
+    if( index == 36){
+      res.render("index", {
+        i: "Bonus",
+        question: question
+      });
+    }
+    else{
+      res.render("index", {
+        i: index+1 + ".",
+        question: question
+      });
+    }
+    
 
     index++;
 
