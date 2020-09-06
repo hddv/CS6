@@ -108,7 +108,7 @@ input.next {
 }
 
 input.toggleSwitch{
-  border: white;
+  border: transparent 1px solid;
 }
 
 .slider {
