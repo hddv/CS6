@@ -109,6 +109,7 @@ input.next {
 
 input[name=toggleSwitch]{
   border: none;
+  background-color: transparent;
 }
 
 .slider {
