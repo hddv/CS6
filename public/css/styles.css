@@ -1,10 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
+
+:root {
+  --font-color: #000;
+  --bg-color: #F5F7FA;
+}
+
+[data-theme="dark"] {
+  --font-color: #E6E6E6;
+  --bg-color: #000;
+}
+
+[data-theme="light"] {
+  --font-color: #000;
+  --bg-color: #F5F7FA;
+}
+
+
 body{
   margin: 0 auto;
   min-height: 100vh;
   max-height: 100vh;
-  background-color: #F5F7FA;
+  /* background-color: #F5F7FA; */
+  background-color: var(--bg-color, #F5F7FA);
+  color: var(--font-color, #000);
   font-family: 'Alegreya', serif;
 }
 
@@ -79,24 +98,12 @@ input, textarea {
 
 
 
-
-.darkMode{
-  background-color: #000;
-  color: #E6E6E6;
-}
-
-.lightMode{
-  background-color: #F5F7FA;
-  color: #000;
-}
-
-
 .switch {
   position: absolute;
   display: inline-block;
   width: 30px;
   height: 17px;
-  right: 20px;
+  right: 15px;
 }
 
 .slider {
@@ -107,8 +114,8 @@ input, textarea {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  /* -webkit-transition: .4s;
+  transition: .4s; */
 }
 
 .slider:before {
@@ -118,9 +125,9 @@ input, textarea {
   width: 13px;
   left: 2px;
   bottom: 2px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background-color: white; 
+  /* -webkit-transition: .2s;
+  transition: .2s;   */
 }
 
 input:checked + .slider {

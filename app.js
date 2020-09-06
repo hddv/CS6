@@ -58,7 +58,21 @@ const questions = [
 let index = 0;
 
 
+
 app.get("/", function (req, res) {
+
+    res.render("index", {
+      valueButton: "Start"
+    });
+  
+});
+
+
+
+
+
+app.post("/", function (req, res){
+
 
   let question = "";
 
@@ -70,13 +84,13 @@ app.get("/", function (req, res) {
     question = questions[index];
 
     if( index == 36){
-      res.render("index", {
+      res.render("questions", {
         i: "Bonus",
         question: question
       });
     }
     else{
-      res.render("index", {
+      res.render("questions", {
         i: index+1 + ".",
         question: question
       });
@@ -86,10 +100,7 @@ app.get("/", function (req, res) {
     index++;
 
   
-
 });
-
-
 
 
 
