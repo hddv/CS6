@@ -91,7 +91,7 @@ p{
   font-size: 16px;
 }
 
-input, textarea {
+input.next, textarea {
   -webkit-appearance: none;
   border-radius: 0;
 }
