@@ -94,7 +94,6 @@ p{
 input.next {
   -webkit-appearance: none;
   border-radius: 0;
-  border: none;
 }
 
 
@@ -109,7 +108,7 @@ input.next {
 }
 
 input.toggleSwitch{
-  border: none;
+  border: transparent;
 }
 
 .slider {
