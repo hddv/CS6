@@ -107,8 +107,8 @@ input.next {
   top: 15px;
 }
 
-input.toggleSwitch{
-  border: transparent 1px solid;
+input[name=toggleSwitch]{
+  border: none;
 }
 
 .slider {
