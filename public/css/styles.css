@@ -94,6 +94,7 @@ p{
 input.next {
   -webkit-appearance: none;
   border-radius: 0;
+  border: none;
 }
 
 
