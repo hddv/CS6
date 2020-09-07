@@ -62,7 +62,7 @@ let index = 0;
 app.get("/", function (req, res) {
 
     index = 0;
-    
+
     res.render("index", {
       valueButton: "Start"
     });
@@ -79,10 +79,10 @@ app.post("/", function (req, res){
   let question = "";
 
   if(index == 37){
-    index = 0;
+    res.redirect("/");
   }
 
-
+  else{
     question = questions[index];
 
     if( index == 36){
@@ -100,6 +100,7 @@ app.post("/", function (req, res){
     
 
     index++;
+  }
 
   
 });
