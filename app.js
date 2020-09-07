@@ -61,6 +61,8 @@ let index = 0;
 
 app.get("/", function (req, res) {
 
+    index = 0;
+    
     res.render("index", {
       valueButton: "Start"
     });
