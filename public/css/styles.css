@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;800&display=swap');
 
 
 :root {
@@ -158,6 +158,7 @@ input:checked + .slider:before {
 a{
   text-decoration:none;
   color: var(--font-color, #000);
+  
 }
 
 .footer{
