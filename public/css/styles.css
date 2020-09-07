@@ -59,7 +59,7 @@ footer{
   position: relative;
 
   width: 250px;
-  height: 390px;
+  height: 400px;
 
   text-align: center;
 
@@ -152,4 +152,23 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+a{
+  text-decoration:none;
+  color: var(--font-color, #000);
+}
+
+.footer{
+  left:0;
+  right:0;
+
+  bottom: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: absolute;
+  width: 40%;
 }
